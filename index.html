@@ -3,69 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashwin S | Developer Portfolio</title>
+  <title>Ashwin S | Portfolio</title>
   <style>
+    :root {
+      --bg-color: #0f1117;
+      --text-color: #e0e0e0;
+      --accent: #5ec6fa;
+      --heading-color: #ffffff;
+      --section-bg: #161a22;
+    }
     * {
       margin: 0; padding: 0; box-sizing: border-box;
     }
     body {
       font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background-color: #f5f7fa;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
     }
     header {
-      background-color: #1e2a38;
-      color: #fff;
-      padding: 2rem 1rem;
+      background-color: var(--section-bg);
+      padding: 3rem 1rem;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      color: var(--heading-color);
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: var(--accent);
     }
     nav {
-      background: #ffffff;
-      padding: 1rem;
+      background-color: #1a1f2b;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem 0;
     }
     nav ul {
+      list-style: none;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      list-style: none;
     }
     nav a {
       text-decoration: none;
-      color: #1e2a38;
+      color: var(--text-color);
       font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: var(--accent);
     }
     section {
       padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
+      background-color: var(--section-bg);
+      margin-top: 2rem;
+      border-radius: 8px;
     }
     h2 {
-      color: #0077b6;
+      color: var(--accent);
       margin-bottom: 1rem;
-      border-bottom: 2px solid #0077b6;
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--accent);
       padding-bottom: 5px;
     }
     ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+      padding-left: 1.2rem;
     }
-    .contact p, .project, .edu, .exp {
+    li {
+      margin-bottom: 0.6rem;
+    }
+    .project, .edu, .exp, .contact p {
       margin-bottom: 1rem;
     }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
     footer {
-      background: #1e2a38;
-      color: #ccc;
+      background-color: #0a0c10;
+      color: #777;
       text-align: center;
       padding: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -73,7 +99,7 @@
 
   <header>
     <h1>Ashwin S</h1>
-    <p>Software Developer | Python & Java | ML & Web Enthusiast</p>
+    <p>Software Developer | Python & Java | ML Enthusiast</p>
   </header>
 
   <nav>
@@ -89,7 +115,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a Computer Science student currently interning at Vcodez – Innovating Ideas, where I work on building predictive models and solving real-world problems using data-driven approaches. I'm passionate about AI, software development, and continuously learning new technologies to solve practical challenges.</p>
+    <p>I’m a Computer Science student interning at Vcodez – Innovating Ideas, building machine learning models and solving real-world data problems. I enjoy working on projects that combine tech, creativity, and real impact. Proactive learner, always chasing the next challenge in AI and development.</p>
   </section>
 
   <section id="skills">
@@ -105,29 +131,32 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <strong>Placement Management System</strong> — A PHP + MySQL web app to manage student and company registration, and schedule interviews.
+      <strong>Placement Management System</strong><br/>
+      A PHP & MySQL web app that manages student & company registration, and interview scheduling.
     </div>
     <div class="project">
-      <strong>Tourist Guide System</strong> — An HTML/CSS/JS web-based tourist guide for destinations, local attractions, and accommodations.
+      <strong>Tourist Guide System</strong><br/>
+      An HTML/CSS/JS web tool for discovering destinations, accommodations, and attractions.
     </div>
     <div class="project">
-      <strong>Disease Prediction System</strong> — A Python machine learning model that predicts disease likelihood based on patient symptoms and history.
+      <strong>Disease Prediction System</strong><br/>
+      A Python machine learning model that predicts disease likelihood using symptoms & history.
     </div>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
     <div class="exp">
-      <strong>Intern - Vcodez, Madurai</strong>  
-      <br />Working on machine learning models, predictive systems, and solving real-world data problems in a fast-paced tech environment.
+      <strong>Intern - Vcodez (Madurai)</strong><br/>
+      Worked on predictive ML models, real-world data systems, and delivered fast-paced tech solutions in a collaborative team environment.
     </div>
   </section>
 
   <section id="education">
     <h2>Education</h2>
     <div class="edu">
-      <strong>B.E. Computer Science & Engineering</strong><br />
-      SCSVMV, Kanchipuram — May 2025
+      <strong>B.E. Computer Science & Engineering</strong><br/>
+      SCSVMV University, Kanchipuram — May 2025
     </div>
     <div class="edu">
       <strong>HSLC</strong> — AKNU S. Sundar Matric Hr. Sec. School, Madurai (2021)
@@ -142,11 +171,11 @@
     <p>Email: <a href="mailto:ashwinsupraja23032004@gmail.com">ashwinsupraja23032004@gmail.com</a></p>
     <p>Phone: <a href="tel:+919361515502">+91 93615 15502</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/ashwin-sridhar-666043256" target="_blank">linkedin.com/in/ashwin-sridhar</a></p>
-    <p>GitHub: <a href="https://github.com/ashwins" target="_blank">github.com/ashwins</a></p>
+    <p>GitHub: <a href="https://github.com/ashwin-s2004" target="_blank">github.com/ashwins</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Ashwin S — Built with 💻 and ☕
+    &copy; 2025 Ashwin S — Built with ❤️ in dark mode
   </footer>
 
 </body>

@@ -3,129 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashwin S - Portfolio</title>
+  <title>Ashwin S | Developer Portfolio</title>
   <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      line-height: 1.6;
+      background-color: #f5f7fa;
       color: #333;
     }
     header {
-      background: #222;
-      color: white;
-      padding: 2rem;
+      background-color: #1e2a38;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    main {
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #ffffff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1e2a38;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
-      padding: 2rem;
-      background: white;
     }
     h2 {
-      color: #007acc;
-      border-bottom: 2px solid #007acc;
+      color: #0077b6;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #0077b6;
       padding-bottom: 5px;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
-    ul li {
-      margin-bottom: 0.75rem;
-    }
-    .project-title {
-      font-weight: bold;
+    .contact p, .project, .edu, .exp {
+      margin-bottom: 1rem;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
+      background: #1e2a38;
       color: #ccc;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Ashwin Sridhar</h1>
-    <p>Computer Science Student | Python & Java Developer | ML Enthusiast</p>
-    <p><a href="mailto:ashwin.s.23032004@gmail.com">ashwinsupraja23032004@gmail.com</a> | 
-       <a href="tel:+919361515502">+91 93615 15502</a> | 
-       <a href="https://linkedin.com/in/ashwin-sridhar-666043256" target="_blank">LinkedIn</a></p>
+    <h1>Ashwin S</h1>
+    <p>Software Developer | Python & Java | ML & Web Enthusiast</p>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Motivated and results-driven Computer Science student with a strong foundation in software development, machine learning, and web technologies. Currently interning at Vcodez – Innovating Ideas, focusing on predictive modeling and solving real-world problems using data. Passionate about AI, software engineering, and continuous learning.</p>
-    </section>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.E. Computer Science & Engineering</strong>, SCSVMV, Kanchipuram — Graduating May 2025</li>
-        <li><strong>HSLC</strong>, AKNU S. Sundar Matric Hr. Sec. School, Madurai — 2021</li>
-        <li><strong>SSLC</strong>, Don Bosco Hr. Sec. School, Madurai — 2019</li>
-      </ul>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student currently interning at Vcodez – Innovating Ideas, where I work on building predictive models and solving real-world problems using data-driven approaches. I'm passionate about AI, software development, and continuously learning new technologies to solve practical challenges.</p>
+  </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <span class="project-title">Placement Management System</span> — Built using PHP & MySQL. 
-          <br>Streamlined student placement processes with features like student & company registration, and interview scheduling.
-        </li>
-        <li>
-          <span class="project-title">Tourist Guide System</span> — Built with HTML, CSS, JavaScript. 
-          <br>Web-based tool to assist tourists with destination info and local attractions.
-        </li>
-        <li>
-          <span class="project-title">Disease Prediction System</span> — Developed in Python using ML techniques. 
-          <br>Predicts disease likelihood based on symptoms and medical history.
-        </li>
-      </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>MySQL</li>
+      <li>C, C++</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>MySQL</li>
-        <li>C, C++</li>
-      </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>Placement Management System</strong> — A PHP + MySQL web app to manage student and company registration, and schedule interviews.
+    </div>
+    <div class="project">
+      <strong>Tourist Guide System</strong> — An HTML/CSS/JS web-based tourist guide for destinations, local attractions, and accommodations.
+    </div>
+    <div class="project">
+      <strong>Disease Prediction System</strong> — A Python machine learning model that predicts disease likelihood based on patient symptoms and history.
+    </div>
+  </section>
 
-    <section>
-      <h2>Certificates</h2>
-      <ul>
-        <li>Java Masterclass</li>
-        <li>UI/UX Design with Figma</li>
-        <li>Foundations of Web Development (CSS, Bootstrap, JS, React)</li>
-      </ul>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp">
+      <strong>Intern - Vcodez, Madurai</strong>  
+      <br />Working on machine learning models, predictive systems, and solving real-world data problems in a fast-paced tech environment.
+    </div>
+  </section>
 
-    <section>
-      <h2>Strengths</h2>
-      <ul>
-        <li>Problem Solving</li>
-        <li>Communication</li>
-        <li>Adaptability</li>
-        <li>Teamwork & Collaboration</li>
-      </ul>
-    </section>
-  </main>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <strong>B.E. Computer Science & Engineering</strong><br />
+      SCSVMV, Kanchipuram — May 2025
+    </div>
+    <div class="edu">
+      <strong>HSLC</strong> — AKNU S. Sundar Matric Hr. Sec. School, Madurai (2021)
+    </div>
+    <div class="edu">
+      <strong>SSLC</strong> — Don Bosco Hr. Sec. School, Madurai (2019)
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ashwinsupraja23032004@gmail.com">ashwinsupraja23032004@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919361515502">+91 93615 15502</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ashwin-sridhar-666043256" target="_blank">linkedin.com/in/ashwin-sridhar</a></p>
+    <p>GitHub: <a href="https://github.com/ashwins" target="_blank">github.com/ashwins</a></p>
+  </section>
 
   <footer>
-    &copy; 2025 Ashwin S — All Rights Reserved
+    &copy; 2025 Ashwin S — Built with 💻 and ☕
   </footer>
 
 </body>
